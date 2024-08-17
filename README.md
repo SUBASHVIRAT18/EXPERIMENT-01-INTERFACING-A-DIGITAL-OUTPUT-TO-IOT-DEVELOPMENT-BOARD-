@@ -162,9 +162,9 @@ void Error_Handler(void)
 void led()
 {
 	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-	  HAL_Delay(3000);//3 seconds as milliseconds
+	  HAL_Delay(2000);//3 seconds as milliseconds
 	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
-	  HAL_Delay(3000);
+	  HAL_Delay(2000);
 }
 #ifdef  USE_FULL_ASSERT
 void assert_failed(uint8_t *file, uint32_t line)
